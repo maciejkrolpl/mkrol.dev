@@ -1,0 +1,1 @@
+(()=>{const e=e=>{e.classList.remove("clicked")};Array.from(document.getElementsByClassName("social-medial-link")).forEach((s=>{s.addEventListener("mousedown",(()=>{s.classList.add("clicked")})),s.addEventListener("mousemove",(()=>{e(s)})),s.addEventListener("mouseup",(()=>{e(s)}))}))})();

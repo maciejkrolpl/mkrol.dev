@@ -1,3 +1,7 @@
+import './nobg1000.png';
+import './github.svg';
+import './styles.css';
+
 const pressIco = (element) => {
   element.classList.add('clicked')
 }

@@ -3,25 +3,29 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 
 module.exports = {
-  entry: './src/index.js',
+  // the output bundle won't be optimized for production but suitable for development
+  mode: 'development',
+  // the app entry point is /src/index.js
+  entry: path.resolve(__dirname, 'src', 'index.js'),
   output: {
-    filename: 'main.js',
-    path: path.resolve(__dirname, 'prod'),
+    // the output of the webpack build will be in /dist directory
+    path: path.resolve(__dirname, 'dist'),
+    // the filename of the JS bundle will be bundle.js
+    filename: 'bundle.js'
   },
-  plugins: [
-    new HtmlWebpackPlugin({
-      title: 'Maciej Król Homepage',
-      template: path.resolve(__dirname, './src/template.html'), // template file
-      filename: 'index.html', // output file
-    }),
-  ],
   module: {
     rules: [
-      // JavaScript
       {
-        test: /\.js$/,
+        // for any file with a suffix of js or jsx
+        test: /\.jsx?$/,
+        // ignore transpiling JavaScript from node_modules as it should be that state
         exclude: /node_modules/,
-        use: ['babel-loader'],
+        // use the babel-loader for transpiling JavaScript to a suitable format
+        loader: 'babel-loader',
+        options: {
+          // attach the presets to the loader (most projects use .babelrc file instead)
+          presets: ["@babel/preset-env", "@babel/preset-react"]
+        }
       },
       //images
       {
@@ -38,15 +42,8 @@ module.exports = {
         test: /\.css$/i,
         use: ["style-loader", "css-loader"],
       },
-    ],
+    ]
   },
-  mode: 'development',
-  devServer: {
-    historyApiFallback: true,
-    static: path.resolve(__dirname, './prod'),
-    open: true,
-    compress: true,
-    hot: true,
-    port: 8090,
-  },
+  // add a custom index.html as the template
+  plugins: [new HtmlWebpackPlugin({ template: path.resolve(__dirname, 'src', 'index.html') })]
 };

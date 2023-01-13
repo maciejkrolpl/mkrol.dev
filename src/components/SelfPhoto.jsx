@@ -1,5 +1,5 @@
-import React from "react";
-import maciek from "../images/self-photo.png";
+import React from 'react';
+import maciek from '../images/self-photo.png';
 import './SelfPhoto.css';
 
 const SelfPhoto = () => (

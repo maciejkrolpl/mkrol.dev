@@ -6,17 +6,13 @@
 }
 
 .wholesome {
-  background: linear-gradient(45deg,
-      rgba(0, 146, 218, 1) 0%,
-      rgb(1, 64, 111) 80%);
+  background: linear-gradient(45deg, rgba(0, 146, 218, 1) 0%, rgb(1, 64, 111) 80%);
   width: 100vw;
   height: 100vh;
 }
-
 
 .content {
   position: absolute;
   right: 16rem;
   top: 10vw;
-
 }

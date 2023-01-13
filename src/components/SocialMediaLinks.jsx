@@ -1,35 +1,33 @@
-import React from "react";
-import GitHubLogo from "../svgs/GitHubLogo";
-import LinkedInLogo from "../svgs/LinkedInLogo";
-import SalesforceLogo from "../svgs/SalesforceLogo";
-import SocialMediaLink from "./SocialMediaLink";
+import React from 'react';
+import GitHubLogo from '../svgs/GitHubLogo';
+import LinkedInLogo from '../svgs/LinkedInLogo';
+import SalesforceLogo from '../svgs/SalesforceLogo';
+import SocialMediaLink from './SocialMediaLink';
 
 import './SocialMediaLinks.css';
 
 const SocialMediaLinks = () => {
-
   const pressIco = (event) => {
-    event.currentTarget.classList.add('clicked')
+    event.currentTarget.classList.add('clicked');
   };
 
   const releaseIco = (event) => {
-    event.currentTarget.classList.remove("clicked");
+    event.currentTarget.classList.remove('clicked');
   };
-
 
   const components = [
     {
       componentName: GitHubLogo,
-      url: "https://github.com/maciejkrolpl/",
+      url: 'https://github.com/maciejkrolpl/'
     },
     {
       componentName: LinkedInLogo,
-      url: "https://www.linkedin.com/in/maciejkrolpl/",
+      url: 'https://www.linkedin.com/in/maciejkrolpl/'
     },
     {
       componentName: SalesforceLogo,
-      url: "https://trailblazer.me/id/mkro",
-    },
+      url: 'https://trailblazer.me/id/mkro'
+    }
   ];
 
   return (

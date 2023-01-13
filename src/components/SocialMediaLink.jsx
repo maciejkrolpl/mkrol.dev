@@ -1,14 +1,8 @@
-import React from "react";
+import React from 'react';
 import './SocialMediaLink.css';
 
 const SocialMediaLink = (props) => {
-  const {
-    componentName: TagName,
-    url,
-    onMouseDown,
-    onMouseMove,
-    onMouseUp,
-  } = props;
+  const { componentName: TagName, url, onMouseDown, onMouseMove, onMouseUp } = props;
   return (
     <a
       href={url}

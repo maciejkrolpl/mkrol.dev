@@ -1,0 +1,25 @@
+.selfie {
+  height: auto;
+  animation-name: photoappear;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  width:100%;
+}
+
+@keyframes photoappear {
+  0% {
+    opacity: 00%;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
+
+.selfie-sticked {
+  position: fixed;
+  bottom: -155px;
+  left:-100px;
+  width: 45%;
+}

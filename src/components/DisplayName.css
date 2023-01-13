@@ -1,0 +1,39 @@
+
+.myname {
+  font-size: 8vw;
+  font-weight: 900;
+  color: transparent;
+  text-transform: uppercase;
+  -webkit-text-stroke: 0.1px rgb(156, 206, 231);
+  animation-name: namecolor;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+}
+
+
+
+@keyframes namecolor {
+
+  0%,
+  10%,
+  20% {
+    -webkit-text-stroke-color: white;
+  }
+
+  5%,
+  15%,
+  25% {
+    -webkit-text-stroke-color: rgb(156, 206, 231);
+  }
+}
+
+
+
+.title {
+  text-align: right;
+  color: rgb(156, 206, 231);
+  font-size: 1.4em;
+  font-family: "Roboto Flex", sans-serif
+}

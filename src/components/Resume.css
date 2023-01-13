@@ -1,0 +1,11 @@
+
+.resume {
+  margin-top: 1em;
+  text-align: right;
+  color: white;
+  font-size: 1.3em;
+}
+
+.resume p {
+  line-height: 2;
+}

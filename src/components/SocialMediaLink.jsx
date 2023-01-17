@@ -11,7 +11,7 @@ const SocialMediaLink = (props) => {
       onMouseDown={onMouseDown}
       onMouseMove={onMouseMove}
       onMouseUp={onMouseUp}
-    >
+      rel="noreferrer">
       <TagName />
     </a>
   );

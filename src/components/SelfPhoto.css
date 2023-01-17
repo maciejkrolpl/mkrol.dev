@@ -23,3 +23,9 @@
   left: -100px;
   width: 45%;
 }
+
+@media only screen and (max-width: 768px) {
+  .selfie-sticked {
+    width: 120%;
+  }
+}

@@ -31,3 +31,10 @@
   font-size: 1.4em;
   font-family: 'Roboto Flex', sans-serif;
 }
+
+@media screen and (max-width: 768px) {
+  .myname {
+    text-align: center;
+    font-size: 3rem;
+  }
+}

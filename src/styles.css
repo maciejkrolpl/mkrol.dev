@@ -16,3 +16,11 @@
   right: 16rem;
   top: 10vw;
 }
+
+
+@media screen and (max-width: 768px) {
+  .content {
+    right: 1rem;
+    left: 1rem;
+  }
+}
